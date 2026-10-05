@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- App title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City Treasure Hunt"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Treasure hunt instructions -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visit 20 locations to complete the hunt!"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Displays the participant's progress -->
+    <TextView
+        android:id="@+id/progressTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress: 0 / 20"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="35dp" />
+
+    <!-- Current treasure hunt location label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Location:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Displays the location the participant must visit -->
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Brampton City Hall"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="35dp" />
+
+    <!-- Checks the participant's GPS location -->
+    <Button
+        android:id="@+id/checkLocationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check My Location" />
+
+    <!-- Displays the distance from the current Treasure Hunt location -->
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance will appear here"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="25dp" />
+
+</LinearLayout>
