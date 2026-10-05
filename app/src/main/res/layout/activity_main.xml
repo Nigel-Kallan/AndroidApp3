@@ -67,6 +67,7 @@
         android:textSize="18sp"
         android:gravity="center"
         android:padding="12dp"
+        android:background="@drawable/treasure_border"
         android:layout_marginBottom="20dp" />
 
     <!-- Checks the participant's GPS location -->
@@ -74,6 +75,10 @@
         android:id="@+id/checkLocationButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#D4A017"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:text="Check My Location" />
 
     <!-- Displays the distance from the current Treasure Hunt location -->
