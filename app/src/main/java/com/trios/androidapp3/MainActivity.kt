@@ -95,6 +95,12 @@ class MainActivity : AppCompatActivity() {
 
                     locationTextView.text =
                         TreasureHuntData.locations[currentLocationIndex].name
+
+                      val clueTextView =
+                          findViewById<android.widget.TextView>(R.id.clueTextView)
+
+                      clueTextView.text =
+                          TreasureHuntData.locations[currentLocationIndex].clue
                 }
           
         // Connect to Google's location service
@@ -128,7 +134,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // Gets the most recently known location of the device
+           // Gets the device's current location using high accuracy
     private fun getCurrentLocation() {
 
         // Check permission again before accessing location
@@ -199,6 +205,11 @@ class MainActivity : AppCompatActivity() {
 
                                locationTextView.text = nextLocation.name
 
+                                  val clueTextView =
+                                      findViewById<android.widget.TextView>(R.id.clueTextView)
+
+                                  clueTextView.text = nextLocation.clue
+                               
                            } else {
 
                                // All 20 Treasure Hunt locations have been completed

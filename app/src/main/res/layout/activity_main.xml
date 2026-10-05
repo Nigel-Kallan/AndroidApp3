@@ -56,7 +56,18 @@
         android:textSize="26sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginBottom="35dp" />
+        android:layout_marginBottom="10dp" />
+
+    <!-- Displays a clue for the current Treasure Hunt location -->
+    <TextView
+        android:id="@+id/clueTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clue will appear here"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp" />
 
     <!-- Checks the participant's GPS location -->
     <Button
